@@ -5,7 +5,7 @@
 if [ ! -f '/usr/bin/psql' ]; then
   cd /tmp
   git clone https://github.com/dwdc/aws-postgis2_96.git
-  ./aws-postgis2_96/execute.sh
+  ./aws-postgis2_96/execute.sh /mnt/pgsql
   rm -rf aws-postgis2_96
 fi
 
